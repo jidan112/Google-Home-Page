@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+section header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+section header ul li{
+    margin-left: 20px;
+}
+section header ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+}
+section header ul li button{
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+section .min{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .min .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .min .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+section .min .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 20px;
+    align-items: center;
+    pointer-events: none;
+}
+section .min .buttons{
+    margin-top: 20px;
+}
+section .min .buttons button{
+    margin: 0px 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
+}
+section .min .buttons button:hover{
+        border-radius: 1px solid #ccc;
+}
+
+section .min .leng{
+    margin-top: 20px;
+    font-family: Arial;
+}
+section .min .leng a{
+    text-decoration: none;
+}
+section .min .leng a:hover{
+    color: crimson;
+    
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+        border: 1px solid rgb(0,0,0,0.5);
+    background-color: #f2f2f2;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+    /* mobile */
+    @media (max-width:768px){
+        section .min .search{
+            width: 88%;
+        }
+            section .footer .row ul{
+                display: block;
+        }
+        section .min .searchbox .icons{
+            width: 88%;
+        }
+        section .min .searchbox{
+            width: 90%;
+            margin-left: 30px;
+        }
+        section .min a .gle{
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            
+        }
+        
+        
+    }
+    
+    /* Dastop View */
+    
